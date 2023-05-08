@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+$images_dir: "/public/images/";
+
+
+/* BREAKPOINTS */
+
+$desktop-large:    1920;
+$desktop-medium:   1440;
+$desktop-small:    1280;
+$tablet-landscape: 1024;
+$tablet-portrait:  768;
+$mobile-landscape: 640;
+$mobile-portrait:  420;
+$small-mobile-portrait: 375px;
+
+
+/* COLORS fonts + hover */
+
+$basecolor1: hsl(0, 0%, 100%);
+$basecolor2: hsl(240, 2%, 79%);
+$basecolor3: hsl(207, 13%, 34%);
+$basecolor4: hsl(240, 10%, 16%);
+$basecolor5: hsl(356, 100%, 66%);
+$basecolor6: hsl(355, 100%, 74%);
+$basecolor7: hsl(208, 49%, 24%);
+
+
+/* COLORS Backgrounds gradients */
+
+// Intro/CTA mobile nav:
+$base-gradient1: hsl(13, 100%, 72%); // #ff8f70
+$base-gradient2: hsl(353, 100%, 62%); // #ff3d54
+
+//Background gradient - body:
+$base-gradient3: hsl(237, 17%, 21%);
+$base-gradient4: hsl(237, 23%, 32%);
+$base-gradient5: linear-gradient(90deg, rgba(255,143,112,1) 33%, rgba(255,61,84,1) 100%);
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+

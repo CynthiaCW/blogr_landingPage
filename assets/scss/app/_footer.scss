@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+#footer{
+    padding: 70px 0;
+    background: $basecolor4;
+
+    .logo{
+        background: url("#{$images_dir}logo.svg") no-repeat center;
+        display: block;
+        height: 53.27px;
+        overflow: hidden;
+        position: relative;
+        width: 153px;
+    }
+
+    .link-footer{
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 15px;
+
+        a{
+            color: $basecolor1;
+
+            &:hover{
+                color: $basecolor5;
+                transition: all 600ms ease;
+            }
+        }
+    }
+    
+
+    .link-item-footer{
+        margin-bottom: 10px;
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+
+        a{
+            color: $basecolor2;
+
+            &:hover{
+                color: $basecolor6;
+                transition: all 600ms ease;
+            }
+        }
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 20% 80%;
+
+        .footer-item{
+           &.logo{
+            margin: 0 10px 20px;
+           }
+
+            &.nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet-landscape+1px) {
+
+    #footer{
+       
+        .footer-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .footer-item{
+
+                &.logo{
+                    margin: 0 10px 40px;
+                }
+
+                &.nav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .footer-list{
+                        padding-bottom: 20px;
+
+                        .link-footer{
+                           display: flex;
+                           justify-content: center;
+                        }
+
+                           .link-item-footer{
+                                text-align: center;
+
+                                a{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                           }
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}

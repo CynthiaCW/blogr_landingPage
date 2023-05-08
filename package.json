@@ -1,0 +1,11 @@
+{
+  "name": "front-canari",
+  "version": "1.0.0",
+  "description": "**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/app/app.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
